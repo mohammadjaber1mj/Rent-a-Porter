@@ -1,0 +1,856 @@
+.top_header {
+    margin: 10px;
+    justify-content: center;
+}
+
+.top_header .row .col {
+    justify-content: center;
+}
+
+.right_top {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.right_top a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.top_header .row .col a {
+    text-decoration: none;
+}
+
+.menu_bar {
+    background-color: #E7687D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.menu_bar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu_bar li {
+    margin: 0 25px;
+    font-size: 18px;
+}
+
+.menu_bar a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu_bar a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.2rem 1rem;
+    border-radius: 30px;
+    width: 12em;
+    transition: all ease-in-out .5s;
+    margin-right: -3rem;
+}
+
+.search__input:hover,
+.search__input:focus {
+    box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+}
+
+.search__input:focus+.search__button {
+    background-color: #f0eeee;
+}
+
+.search__button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: .1em;
+}
+
+.search__button:hover {
+    cursor: pointer;
+}
+
+.search__icon {
+    height: 1.1em;
+    width: 1.1em;
+    fill: #b4b4b4;
+    margin-bottom: 5px;
+}
+
+.btn_fav,
+.btn_cart {
+    margin-left: 15px;
+    border: 0;
+    background-color: transparent;
+}
+
+.btn_signin,
+.btn_aboutus {
+    font-size: 17px;
+    color: #000000;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.btn_signin {
+    margin-top: 10px;
+}
+
+.btn_signin a,
+.btn_aboutus a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.btn_signin:focus,
+.btn_signin:hover,
+.btn_aboutus:focus,
+.btn_aboutus:hover {
+    color: #000000;
+}
+
+.btn_signin:focus:after,
+.btn_signin:hover:after,
+.btn_aboutus:focus:after,
+.btn_aboutus:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.btn_signin:after,
+.btn_aboutus::after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #000000;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.btn_designer a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn_designer {
+    margin-top: 2.5rem;
+    font-size: 18px;
+    color: #000000;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.btn_designer:focus,
+.btn_designer:hover {
+    color: #000000;
+}
+
+.btn_designer:focus:after,
+.btn_designer:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.btn_designer:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #000000;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.sign_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.form-container {
+    width: 350px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+
+.title {
+    text-align: center;
+    margin: 10px 0 30px 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 15px;
+}
+
+.input {
+    border-radius: 20px;
+    border: 1px solid #c0c0c0;
+    outline: 0 !important;
+    box-sizing: border-box;
+    padding: 12px 15px;
+}
+
+.page-link {
+    text-decoration: underline;
+    margin: 0;
+    text-align: end;
+    color: #747474;
+    text-decoration-color: #747474;
+}
+
+.page-link-label {
+    cursor: pointer;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.page-link-label:hover {
+    color: #000000;
+}
+
+.form-btn,
+.upload_btn,
+.fav_btn,
+.checkout_btn {
+    padding: 10px 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    border: 0 !important;
+    outline: 0 !important;
+    background: #E7687D;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form-btn:active {
+    box-shadow: none;
+}
+
+.sign-up-label {
+    margin: 0;
+    font-size: 10px;
+    color: #747474;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.sign-up-label a {
+    text-decoration: none;
+    color: #E7687D;
+}
+
+.sign-up-link {
+    margin-left: 1px;
+    font-size: 11px;
+    text-decoration: underline;
+    text-decoration-color: #E7687D;
+    color: #E7687D;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.apple-login-button,
+.google-login-button {
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    gap: 5px;
+}
+
+.apple-login-button {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+.google-login-button {
+    border: 2px solid #747474;
+}
+
+.apple-icon,
+.google-icon {
+    font-size: 18px;
+    margin-bottom: 1px;
+}
+
+.button_become_a_lender {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #000000;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    margin: 0;
+    min-width: 0;
+    outline: none;
+    padding: 0.8em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.button_become_a_lender:disabled:disabled {
+    pointer-events: none;
+}
+
+.button_become_a_lender:hover:hover {
+    color: #ffffff;
+    background-color: #000000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button_become_a_lender:active:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* Style for the popup container */
+.lender_sign_div {
+    display: none;
+    /* Hide by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Style for the pop up close button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right: 7px solid #E7687D;
+    font-size: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 2rem;
+    padding-left: 18px;
+}
+
+.sidebar ul .logo-li {
+    margin-left: 2.2rem;
+}
+
+.sidebar ul li a {
+    display: block;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #E7687D;
+}
+
+.sidebar ul li a:focus {
+    color: #E7687D;
+}
+
+.sidebar_content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.dress_designer_p {
+    font-weight: 800;
+    font-size: large;
+    margin-top: 0.5rem;
+    margin-bottom: -0.3rem;
+}
+
+.dress_designer_p a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.dress_description_p {
+    font-weight: 600;
+    margin-bottom: -0.2rem;
+}
+
+.dress_price_p {
+    font-weight: 700;
+    margin-bottom: -0.2rem;
+}
+
+.dress_size_p {
+    font-weight: 600;
+}
+
+/*styles for dress length lender_submission page*/
+
+.length_radio-input input {
+    display: none;
+}
+
+.length_radio-input {
+    --container_width: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000000;
+    width: var(--container_width);
+    overflow: hidden;
+    border: 1px solid rgba(53, 52, 52, 0.226);
+}
+
+.length_radio-input label {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 14px;
+}
+
+.length_selection {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: calc(var(--container_width) / 3);
+    z-index: 0;
+    left: 0;
+    top: 0;
+    transition: .15s ease;
+}
+
+.length_radio-input label:has(input:checked) {
+    color: #fff;
+}
+
+.length_radio-input label:has(input:checked)~.length_selection {
+    background-color: #E7687D;
+    display: inline-block;
+}
+
+.length_radio-input label:nth-child(1):has(input:checked)~.length_selection {
+    transform: translateX(calc(var(--container_width) * 0/3));
+}
+
+.length_radio-input label:nth-child(2):has(input:checked)~.length_selection {
+    transform: translateX(calc(var(--container_width) * 1/3));
+}
+
+.length_radio-input label:nth-child(3):has(input:checked)~.length_selection {
+    transform: translateX(calc(var(--container_width) * 2/3));
+}
+
+/*style for the color input radio buttons in the lender_submission page*/
+.colors_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-tile-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.radio-tile-group .colors_input-container {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    margin: 0.5rem;
+}
+
+.radio-tile-group .colors_input-container .radio-button {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+}
+
+.radio-tile-group .colors_input-container .radio-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 1rem;
+    transition: transform 300ms ease;
+}
+
+.radio-tile-group .colors_input-container .radio-tile-label {
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Specific styles for each color */
+#red+.radio-tile {
+    border-color: red;
+}
+
+#pink+.radio-tile {
+    border-color: pink;
+}
+
+#purple+.radio-tile {
+    border-color: purple;
+}
+
+#blue+.radio-tile {
+    border-color: blue;
+}
+
+#light_blue+.radio-tile {
+    border-color: lightblue;
+}
+
+#green+.radio-tile {
+    border-color: green;
+}
+
+#yellow+.radio-tile {
+    border-color: yellow;
+}
+
+#orange+.radio-tile {
+    border-color: orange;
+}
+
+#black+.radio-tile {
+    border-color: black;
+}
+
+#white+.radio-tile {
+    border-color: white;
+}
+
+#gold+.radio-tile {
+    border-color: gold;
+}
+
+#others+.radio-tile {
+    border-color: rgb(203, 230, 0);
+}
+
+/* Styles when radio buttons are checked */
+#red:checked+.radio-tile {
+    background-color: red;
+    color: white;
+    transform: scale(1.1);
+}
+
+#pink:checked+.radio-tile {
+    background-color: pink;
+    color: white;
+    transform: scale(1.1);
+}
+
+#purple:checked+.radio-tile {
+    background-color: purple;
+    color: white;
+    transform: scale(1.1);
+}
+
+#blue:checked+.radio-tile {
+    background-color: blue;
+    color: white;
+    transform: scale(1.1);
+}
+
+#light_blue:checked+.radio-tile {
+    background-color: lightblue;
+    color: white;
+    transform: scale(1.1);
+}
+
+#green:checked+.radio-tile {
+    background-color: green;
+    color: white;
+    transform: scale(1.1);
+}
+
+#yellow:checked+.radio-tile {
+    background-color: yellow;
+    color: white;
+    transform: scale(1.1);
+}
+
+#orange:checked+.radio-tile {
+    background-color: orange;
+    color: white;
+    transform: scale(1.1);
+}
+
+#black:checked+.radio-tile {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+#white:checked+.radio-tile {
+    background-color: white;
+    border: 2px dashed black;
+    color: black;
+    transform: scale(1.1);
+}
+
+#gold:checked+.radio-tile {
+    background-color: gold;
+    color: white;
+    transform: scale(1.1);
+}
+
+#others:checked+.radio-tile {
+    background-color: rgb(203, 230, 0);
+    color: white;
+    transform: scale(1.1);
+}
+
+#red:checked+.radio-tile .radio-tile-label,
+#pink:checked+.radio-tile .radio-tile-label,
+#purple:checked+.radio-tile .radio-tile-label,
+#blue:checked+.radio-tile .radio-tile-label,
+#light_blue:checked+.radio-tile .radio-tile-label,
+#green:checked+.radio-tile .radio-tile-label,
+#yellow:checked+.radio-tile .radio-tile-label,
+#orange:checked+.radio-tile .radio-tile-label,
+#black:checked+.radio-tile .radio-tile-label,
+#gold:checked+.radio-tile .radio-tile-label,
+#others:checked+.radio-tile .radio-tile-label {
+    color: white;
+}
+
+#white:checked+.radio-tile .radio-tile-label {
+    color: black;
+}
+
+/*style for radio buttons of size in lender_submission*/
+
+.size-radio-input input {
+    display: none;
+}
+
+.size-radio-input {
+    --container_width: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000000;
+    width: var(--container_width);
+    overflow: hidden;
+    border: 1px solid rgba(53, 52, 52, 0.226);
+}
+
+.size-radio-input label {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 14px;
+}
+
+.size_selection {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: calc(var(--container_width) / 4);
+    z-index: 0;
+    left: 0;
+    top: 0;
+    transition: .15s ease;
+}
+
+.size-radio-input label:has(input:checked) {
+    color: #fff;
+}
+
+.size-radio-input label:has(input:checked)~.size_selection {
+    background-color: #E7687D;
+    display: inline-block;
+}
+
+.size-radio-input label:nth-child(1):has(input:checked)~.size_selection {
+    transform: translateX(calc(var(--container_width) * 0/4));
+}
+
+.size-radio-input label:nth-child(2):has(input:checked)~.size_selection {
+    transform: translateX(calc(var(--container_width) * 1/4));
+}
+
+.size-radio-input label:nth-child(3):has(input:checked)~.size_selection {
+    transform: translateX(calc(var(--container_width) * 2/4));
+}
+
+.size-radio-input label:nth-child(4):has(input:checked)~.size_selection {
+    transform: translateX(calc(var(--container_width) * 3/4));
+}
+
+.dropdownmenu {
+    width: 300px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.gift_label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #E7687D;
+}
+
+.gift_in[type="text"], .gift_in[type="email"], .gift_in[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.gift_in[type="submit"] {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gift_in[type="submit"]:hover {
+  background-color: #E7687D;
+  color: black;
+}
